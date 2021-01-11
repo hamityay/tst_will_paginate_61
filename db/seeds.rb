@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+1.upto(20).each do |i|
+   Blog.create(
+     title: "Title #{i}",
+     author: "Author #{i}",
+     category: "Category #{i}",
+     content: "This #{i} th test blog post"
+   )
+ end

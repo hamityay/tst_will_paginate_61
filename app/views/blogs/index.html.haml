@@ -1,0 +1,33 @@
+
+%h1
+  = t('list', model: Blog.model_name.human(count: 3))
+
+= page_entries_info @blogs, model: :blog
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Author
+      %th Category
+      %th Content
+      %th
+      %th
+      %th
+
+  %tbody
+    - @blogs.each do |blog|
+      %tr
+        %td= blog.title
+        %td= blog.author
+        %td= blog.category
+        %td= blog.content
+        %td= link_to 'Show', blog
+        %td= link_to 'Edit', edit_blog_path(blog)
+        %td= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= will_paginate @blogs, :renderer => FoundationPagination::Rails
+
+= link_to 'New Blog', new_blog_path

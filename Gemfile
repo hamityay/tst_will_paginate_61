@@ -56,3 +56,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'react-rails'
+gem 'will_paginate', github: 'kvokka/will_paginate', branch: 'fix-page_entries_info'
+gem 'will_paginate-foundation'

@@ -30,4 +30,42 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      blog:
+        title: Blog Title
+        author: Author of Blog
+        category: Blog Category
+        content: Content of the Blog
+    models:
+      blog:
+        one: Blog
+        other: Blogs
+  list: "Listing %{model}"
+  will_paginate:
+    blog:
+      page_entries_info:
+        multi_page: Displaying %{model} %{from} to %{to} of %{count}
+        multi_page_html: Displaying %{model} %{from} to %{to} of %{count}
+        single_page:
+          one: Displaying 1 %{model}
+          other: Displaying all %{count} %{model}
+          zero: No %{model} found
+        single_page_html:
+          one: Displaying 1 %{model}
+          other: Displaying all %{count} %{model}
+          zero: No %{model} found
+    next_label: Next →
+    page_entries_info:
+      multi_page: Displaying %{model} %{from} to %{to} of %{count}
+      multi_page_html: Displaying %{model} %{from} to %{to} of %{count}
+      single_page:
+        one: Displaying 1 %{model}
+        other: Displaying all %{count} %{model}
+        zero: No %{model} found
+      single_page_html:
+        one: Displaying 1 %{model}
+        other: Displaying all %{count} %{model}
+        zero: No %{model} found
+    page_gap: "…"
+    previous_label: "← Previous"
