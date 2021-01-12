@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/kvokka/will_paginate.git
-  revision: 1359ad623b4e07a13b30c60d867d01ad03c2e490
+  revision: ae8f84106c71f270827ee86165f79d5681cd98bb
   branch: fix-page_entries_info
   specs:
     will_paginate (3.3.0)
